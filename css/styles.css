@@ -1,0 +1,105 @@
+:root {
+    --main: rgb(19, 91, 142);
+    --primary:rgb(222, 205, 135);
+    --error: rgb(230, 57, 57);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: var(--main);
+
+}
+
+.container {
+    width: 50%;
+    min-width: 50rem;
+    margin: 1rem auto;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 3rem 5rem;
+    background-color: white;
+}
+
+h1{
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--main);
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.input-icon {
+    background-color: var(--primary);
+    display: inline-block;
+    padding: .62rem .7rem;
+    margin: 0;
+    font-size: 1.4rem;
+    flex: 0 0 1;
+    color: var(--main);
+    font-weight: bold;
+}
+
+.form-input {
+    width: 80%;
+    padding: .5rem .5rem; 
+    margin-left: -.1rem;
+    flex: 2;
+    font-weight: 700;
+}
+
+.btn {
+    width: 10rem;
+    background-color: var(--main);
+    color: var(--primary);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--main);
+}
+
+#loading, #results {
+    display: none;
+    margin: auto;
+    text-align: center;
+}
+.alert {
+    text-align: center;
+    background: var(--error);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+
+}
+
+.note {
+    margin: 0;
+    font-size: 1.3rem;
+}

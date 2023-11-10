@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Loan Calculator</h1>
+        <form id="loan-form">
+            <div class="form-group">
+                <span class="input-icon">$</span>
+                <input type="number" class="form-input"  id="amount" placeholder="Loan Amount"> 
+            </div>
+
+            <div class="form-group">
+                <span class="input-icon">%</span>
+                <input type="number" class="form-input" id="interest" placeholder="Interest"> 
+            </div> 
+            
+            <div class="form-group">
+                <input type="number" class="form-input" id="years" placeholder="Years to Repay"><br>
+            </div> 
+
+            <p class="note">Note: Interest usually increases with years</p> 
+
+            <div class="form-group">
+                <input type="submit" value="Calculate" class="btn">
+            </div> 
+        </form>
+
+        <div id="loading">
+            <img src="images/loading.gif" alt="loading" class="load">
+        </div>
+
+        <div id="results">
+            <h5>Results:</h5>
+
+            <div class="form-group">
+                <span class="input-icon">Monthly Payment:</span>
+                <input type="number" class="form-input" id="monthly-payment" disabled> 
+            </div>
+
+            <div class="form-group">
+                <span class="input-icon">Total Payment:</span>
+                <input type="number" class="form-input" id="total-payment" disabled> 
+            </div>
+
+            <div class="form-group">
+                <span class="input-icon">Total Interest:</span>
+                <input type="number" class="form-input" id="total-interest" disabled> 
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="app2.js"></script>
+</body>
+</html>
